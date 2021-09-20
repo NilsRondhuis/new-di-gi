@@ -1,0 +1,29 @@
+.section-hero {
+    padding: 35px 0 95px 0;
+    text-align: center;
+    background-color: var(--main-text-cl);
+    background-image: url(../images/mobile/hero/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/hero/bg-img@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/mobile/hero/bg-img@3x.jpg);
+    }
+}
+.section-hero__title {
+    margin: 0;
+    font-family: var(--heading-text-fonts);
+    font-weight: 300;
+    @include fonts-property(28px, 1);
+    text-transform: uppercase;
+    color: var(--white-cl);
+}

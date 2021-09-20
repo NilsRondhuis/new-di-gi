@@ -1,0 +1,18 @@
+@import './utils/mixins';
+@import './base/fonts';
+@import './base/common';
+@import './components/header';
+@import './components/btn';
+@import './layouts/hero';
+@import './layouts/intro';
+
+:root {
+    --main-text-cl: #9B9B9B;
+    --accent-cl: #2B4074;
+    --secondary-cl: #F9F6E5;
+    --white-cl: #FFFFFF;
+    --dark-cl: #4A4A4A;
+    --main-text-fonts: 'Roboto', sans-serif;
+    --heading-text-fonts: 'Roboto Condensed', sans-serif;
+    --secondary-text-fonts: 'Dosis', sans-serif;
+}

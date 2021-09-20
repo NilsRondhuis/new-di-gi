@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    padding: 15px;
+    font-weight: 500;
+    @include fonts-property(18px, 1);
+    border-radius: 3px;
+    border: 1px solid var(--accent-cl);
+    transition: background-color 250ms linear,
+    color 250ms linear;
+}
+
+.btn--secondary-color {
+    color: var(--accent-cl);
+    background-color: var(--secondary-cl);
+
+    &:hover,
+    &:focus {
+        color: var(--secondary-cl);
+        background-color: transparent;
+    }
+}

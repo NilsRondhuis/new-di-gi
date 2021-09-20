@@ -1,0 +1,25 @@
+.page-header {
+    padding: 7px 0;
+    background-color: var(--accent-cl);
+}
+.page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 14px;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--white-cl);
+    cursor: pointer;
+}
+.btn-menu__icon {
+    width: 13px;
+    height: 14px;
+}
