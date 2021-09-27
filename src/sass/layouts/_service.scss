@@ -20,6 +20,7 @@
     border: 1px solid var(--secondary-cl);
 }
 .list-service__link {
+        position: relative;
         display: inline-block;
         padding: 100px 0 100px 0;
         width: 100%;
@@ -28,7 +29,7 @@
         &::before {
             content: '';
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             width: 100%;
             height: 100px;
             background-repeat: no-repeat;
@@ -41,6 +42,126 @@
             outline: 4px solid var(--accent-cl);
         }
 }
+.list-service__link--icon-strategy::before {
+    background-image: url(../images/icons/strategy.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/strategy@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/strategy@3x.png);
+    }
+}
+.list-service__link--icon-analysis::before {
+    background-image: url(../images/icons/analysis.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/analysis@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/analysis@3x.png);
+    } 
+}
+.list-service__link--icon-social::before {
+    background-image: url(../images/icons/social.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/social.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/social.png);
+    }
+}
+.list-service__link--icon-development::before {
+    background-image: url(../images/icons/development.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/development.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/development.png);
+    }
+}
+.list-service__link--icon-content::before {
+    background-image: url(../images/icons/content.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/content.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/content.png);
+    }  
+}
+.list-service__link--icon-design::before {
+    background-image: url(../images/icons/design.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/design.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/design.png);
+    } 
+}
+.list-service__link--icon-target::before {
+    background-image: url(../images/icons/digital.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/digital.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/digital.png);
+    }
+}
+.list-service__link--icon-product::before {
+    background-image: url(../images/icons/product.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/icons/product.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/icons/product.png);
+    }
+}
 .list_service__title {
     margin-bottom: 20px;
     font-family: var(--heading-text-fonts);
@@ -50,14 +171,21 @@
     color: var(--dark-cl);
 }
 .list_service__more {
-    // opacity: 0;
-    // transition: opacity 250ms linear;
+    position: absolute;
+    left: 0;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+.list-service__link:hover .list_service__more,
+.list-service__link:focus .list_service__more {
+    opacity: 1;
 }
 .list_service__desc {
     font-family: var(--secondary-text-fonts);
     color: var(--main-text-cl);
 }
-.list_service__link--more {
+.list_service__more--text {
     display: flex;
     align-items: center;
     justify-content: center;

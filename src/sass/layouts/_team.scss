@@ -1,0 +1,25 @@
+.section-team {
+}
+.section-team__container {
+    text-align: center;
+}
+.section-team__box {
+
+}
+.section-team__title {
+    margin-top: 40px;
+    color: var(--accent-cl);
+}
+.section-team__desc {
+    margin-bottom: 85px;
+}
+.section-team__btn {
+    color: var(--white-cl);
+    background-color: var(--accent-cl);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+        background-color: transparent;
+    }
+}
