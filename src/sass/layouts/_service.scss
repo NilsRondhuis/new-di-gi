@@ -172,7 +172,8 @@
 }
 .list_service__more {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 0 20px;
     opacity: 0;
     transition: opacity 250ms linear;

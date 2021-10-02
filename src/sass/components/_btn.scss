@@ -7,11 +7,13 @@
     border: 1px solid var(--accent-cl);
     transition: background-color 250ms linear,
     color 250ms linear;
+    cursor: pointer;
 }
 
 .btn--secondary-color {
     color: var(--accent-cl);
     background-color: var(--secondary-cl);
+    border-color: var(--secondary-cl);
 
     &:hover,
     &:focus {

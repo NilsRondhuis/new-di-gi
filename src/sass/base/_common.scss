@@ -29,6 +29,10 @@ ul {
     padding: 0;
 }
 
+address {
+    font-style: normal;
+}
+
 .container {
     width: 100%;
     padding-left: 15px;
@@ -74,4 +78,9 @@ ul {
         height: 8px;
         background-color: currentColor;
     }
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
 }

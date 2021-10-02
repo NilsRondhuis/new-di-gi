@@ -3,12 +3,15 @@
 @import './base/common';
 @import './components/header';
 @import './components/btn';
+@import './components/footer';
+@import './components/btn-up';
 @import './layouts/hero';
 @import './layouts/intro';
 @import './layouts/service';
 @import './layouts/project';
 @import './layouts/team';
 @import './layouts/news';
+@import './layouts/review';
 
 :root {
     --main-text-cl: #9B9B9B;

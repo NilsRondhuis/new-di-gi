@@ -1,0 +1,27 @@
+.section-review {
+}
+.section-review__icon {
+    width: 40px;
+    height: 34px;
+    fill: var(--accent-cl);
+}
+.section-review__centered {
+    margin-bottom: 90px;
+}
+.review {
+    margin-bottom: 40px;
+    color: var(--dark-cl);
+}
+.review__text {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: var(--heading-text-fonts);
+    @include fonts-property (24px, 1.08);   
+}
+.review__name {
+    font-family: var(--heading-text-fonts);
+    font-weight: bold;
+    @include fonts-property (20px, 1.15);
+    text-align: center;
+    letter-spacing: 2px;
+}
