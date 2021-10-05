@@ -11,12 +11,16 @@
     align-items: center;
 }
 .list-project__item {
-    max-width: 280px;
+    max-width: 240px;
     width: 100%;
     text-align: center;
 
     &:not(:last-child) {
         margin-bottom: 20px;
+    }
+
+    @include for-size(portrait) {
+        max-width: 447px;
     }
 }
 .list-project__link {
@@ -30,14 +34,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
         display: block;
-        width: 265px;
-        height: 240px;
+        width: 220px;
+        height: 200px;
         background-color: #f9f6e5d8;
         background-image: url(../images/svg/info-button.svg), url(../images/svg/search.svg);
         background-repeat: no-repeat;
-        background-position: 100px center, 140px center;
+        background-position: 75px center, 115px center;
         opacity: 0;
         transition: opacity 250ms linear;
+
+        @include for-size(portrait) {
+            width: 430px;
+            height: 380px;
+            background-position: 170px center, 230px center;
+            background-size: 50px;
+        }
     }
 
     &:hover::before {
@@ -51,4 +62,8 @@
     line-height: 1.18;
     letter-spacing: 2px;
     color: var(--accent-cl);
+
+    @include for-size(portrait) {
+        @include fonts-property(20px, 1.15);
+    }
 }

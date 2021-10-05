@@ -1,23 +1,74 @@
 .section-service {
     text-align: center;
+
+    @include for-size(portrait) {
+        padding-bottom: 0;
+    }
 }
 .section-service__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--heading-text-fonts);
+    font-weight: 300;
+    @include fonts-property(24px, 1.16);
+    letter-spacing: 2px;
     color: var(--accent-cl);
+
+    @include for-size(mobile-only) {
+        &::after {
+            content: '';
+            display: inline-block;
+            margin-top: 20px;
+            width: 100px;
+            height: 8px;
+            background-color: currentColor;
+        }
+    }
+
+    @include for-size(portrait) {
+        margin-bottom: 10px;
+        @include fonts-property(48px, 1.16);
+    }
 }
 .section-service__desc--medium {
     @include fonts-property(20px, 1.2);
     color: var(--dark-cl);
+
+    @include for-size(portrait) {
+        @include fonts-property(24px, 1);
+
+        &::after {
+            content: '';
+            display: inline-block;
+            margin-top: 20px;
+            width: 100px;
+            height: 8px;
+            background-color: currentColor;
+        }
+    }
 }
 .section-service__desc--bottom {
     margin-bottom: 40px;
+
+    @include for-size(portrait) {
+        @include fonts-property(18px, 1.33);
+    }
 }
 .list-service {
-
+    @include for-size(portrait) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 }
 .list-service__item {
     padding: 20px;
     text-align: center;
     border: 1px solid var(--secondary-cl);
+
+    @include for-size(portrait) {
+        flex-basis: calc(100% / 2);
+    }
 }
 .list-service__link {
         position: relative;

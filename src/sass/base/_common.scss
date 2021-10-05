@@ -78,6 +78,10 @@ address {
         height: 8px;
         background-color: currentColor;
     }
+
+    @include for-size(portrait) {
+        @include fonts-property(48px, 1.16);
+    }
 }
 
 .centered {

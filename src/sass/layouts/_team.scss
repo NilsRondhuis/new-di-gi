@@ -13,6 +13,10 @@
 }
 .section-team__desc {
     margin-bottom: 85px;
+
+    @include for-size(portrait) {
+        margin-bottom: 55px;
+    }
 }
 .section-team__btn {
     color: var(--white-cl);

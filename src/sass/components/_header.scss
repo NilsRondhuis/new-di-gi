@@ -1,6 +1,10 @@
 .page-header {
     padding: 7px 0;
     background-color: var(--accent-cl);
+
+    @include for-size(portrait) {
+        padding: 17px 0;
+    }
 }
 .page-header__nav {
     display: flex;
