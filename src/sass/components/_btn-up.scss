@@ -3,6 +3,15 @@
     justify-content: center;
     background-color: var(--secondary-cl);
     padding: 60px 0;
+
+    @include for-size(portrait) {
+        padding: 7px 0;
+    }
+}
+.centered--portrait-left {
+    @include for-size(portrait) {
+        justify-content: end;
+    }
 }
 .up-container__btn {
     display: flex;
@@ -13,13 +22,25 @@
     font-family: var(--heading-text-fonts);
     @include fonts-property (16px, 1.18);
     letter-spacing: 2px;
+    text-transform: uppercase;
     color: var(--dark-cl);
     background-color: transparent;
     border: none;
+
+    @include for-size(portrait) {
+        flex-direction: row;
+        align-items: normal;
+    }
 }
 .up-container__icon {
     margin-top: 15px;
     width: 16px;
     height: 15px;
     fill: var(--accent-cl);
+
+    @include for-size(portrait) {
+        margin: 0 0 0 15px;
+        width: 22px;
+        height: 22px;
+    }
 }

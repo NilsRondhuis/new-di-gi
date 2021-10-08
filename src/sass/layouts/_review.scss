@@ -1,4 +1,5 @@
 .section-review {
+    padding: 60px 0;
 }
 .section-review__icon {
     width: 40px;
@@ -7,6 +8,10 @@
 }
 .section-review__centered {
     margin-bottom: 90px;
+
+    @include for-size(portrait) {
+        margin-bottom: 40px;
+    }
 }
 .review {
     margin-bottom: 40px;
@@ -17,6 +22,11 @@
     text-align: center;
     font-family: var(--heading-text-fonts);
     @include fonts-property (24px, 1.08);   
+
+    @include for-size(portrait) {
+        margin-bottom: 40px;
+        @include fonts-property (34px, 1.06);
+    }
 }
 .review__name {
     font-family: var(--heading-text-fonts);
