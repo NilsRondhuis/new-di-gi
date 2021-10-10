@@ -29,6 +29,9 @@
         @include fonts-property (24px, 1.08);
         text-align: start;
     }
+    @include for-size(tablet) {
+        @include fonts-property (36px, 0.89);
+    }
 }
 .list-social {
     margin-bottom: 40px;
@@ -60,13 +63,18 @@
             border-right: none;
         }
     }
+    @include for-size(tablet) {
+        border: 1px solid #7EBF84;
+    }
 }
 .list-social__link {
     display: inline-block;
 
     @include for-size(portrait) {
-
         padding: 20px 63px;
+    }
+    @include for-size(tablet) {
+        padding: 25px 79px;
     }
 }
 .list-social__icon {

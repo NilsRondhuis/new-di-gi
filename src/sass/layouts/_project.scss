@@ -1,14 +1,29 @@
 .section-project {
     background-image: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+
+    @include for-size(tablet) {
+        padding: 80px 0;
+    }
 }
 .section-project__title {
     margin-bottom: 40px;
     color: var(--white-cl);
+
+    @include for-size(tablet) {
+        margin-bottom: 80px;
+    }
 }
 .list-project {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include for-size(tablet) {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 .list-project__item {
     max-width: 240px;
@@ -18,9 +33,12 @@
     &:not(:last-child) {
         margin-bottom: 20px;
     }
-
     @include for-size(portrait) {
         max-width: 447px;
+    }
+    @include for-size(tablet) {
+        margin: 15px;
+        flex-basis: calc((100% - 2 * 30px) / 2);
     }
 }
 .list-project__link {
@@ -47,6 +65,16 @@
             width: 430px;
             height: 380px;
             background-position: 170px center, 230px center;
+            background-size: 50px;
+        }
+        @include for-size(tablet) {
+            width: 90%;
+            height: 90%;
+            background-position: 110px center, 165px center;
+            background-size: 40px;
+        }
+        @include for-size(desktop) {
+            background-position: 150px center, 215px center;
             background-size: 50px;
         }
     }

@@ -1,12 +1,37 @@
 .section-intro {
     text-align: center;
     background-color: var(--accent-cl);
+
+    @include for-size(tablet) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        text-align: start;
+    }
+    @include for-size(desktop) {
+        padding: 40px 0;
+    }
+}
+.section-intro__container {
+    @include for-size(tablet) {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+.section-intro__box {
+    @include for-size(tablet) {
+        margin-right: auto;
+        max-width: 430px;
+    }
 }
 .section-intro__title {
     margin-bottom: 10px;
     font-weight: 500;
     @include fonts-property(24px, 1);
     color: var(--white-cl);
+
+    @include for-size(desktop) {
+        @include fonts-property(18px, 1);
+    }
 }
 .section-intro__desc {
     margin-bottom: 40px;
@@ -14,4 +39,11 @@
     font-weight: 300;
     font-size: 16px;
     color: var(--white-cl);
+
+    @include for-size(tablet) {
+        margin: 0;
+    }
+    @include for-size(desktop) {
+        @include fonts-property(16px, 1.14);
+    }
 }

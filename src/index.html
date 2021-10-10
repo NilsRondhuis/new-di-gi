@@ -40,14 +40,17 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="section-hero__title">Мысли<br>глобально</h1>
+          <p class="section-hero__text">Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
           <button class="btn section-hero__btn">Подробнее</button>
         </div>
       </section>
 
       <section class="section section-intro">
-        <div class="container">
-          <h2 class="section-intro__title">Вы полюбите нас с первой встречи!</h2>
-          <p class="section-intro__desc">Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере.</p>
+        <div class="container section-intro__container">
+          <div class="section-intro__box">
+            <h2 class="section-intro__title">Вы полюбите нас с первой встречи!</h2>
+            <p class="section-intro__desc">Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере.</p>
+          </div>
 
           <button class="btn btn--secondary-color">ПЕРЕЗВОНИТЕ МНЕ</button>
         </div>
@@ -68,7 +71,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -85,7 +88,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -102,7 +105,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -119,7 +122,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -136,7 +139,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -153,7 +156,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -170,7 +173,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -187,7 +190,7 @@
 
                 <p class="list_service__desc">Создадим уникальный и удобный дизайн...</p>
                 
-                <p href="" class="list_service__more--text">
+                <p class="list_service__more--text">
                   ПОДРОБНЕЕ
                   <svg class="list_service__icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
@@ -262,27 +265,34 @@
 
       <section class="section section-team">
         <div class="container section-team__container">
-          <div class="section-team__box">
-            <img 
-              srcset="
-              ./images/mobile/team/video.jpg 300w,
-              ./images/portrait/team/video.png 600w
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/team/video.jpg" 
-              alt="Video">
+          <div class="section-team__box--flex">
+            <div class="section-team__box--img">
+              <img 
+                srcset="
+                ./images/mobile/team/video@3x.jpg 300w,
+                ./images/portrait/team/video@3x.jpg 600w,
+                ./images/tablet/team/video@3x.jpg 700w,
+                ./images/desktop/team/video@3x.jpg 1000w
+                "
+                sizes="(min-width: 1024px) 1185px, (min-width: 768px) 1554px, (min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
+                src="./images/mobile/team/video@3x.jpg"
+                alt="team"
+              />
+            </div>   
+    
+            <div class="section-team__box--text">
+              <h2 class="section-title section-team__title">Команда</h2>
+              <p class="section-team__desc">
+                Наша команда - это наша самая большая ценность. 
+                Мы трудились, чтобы собрать группу  экспертов,
+                чьи навыки дополняют друг друга. 
+                У членов нашей команды разные истории, но мы разделяем общую страсть к идеалу. Мы верим, чтобы оставаться
+                профессионалом, нужно развиваться, 
+                поэтому мы постоянно ищем способы, как стать лучше 
+                в том, что мы делаем.
+              </p>
+            </div>
           </div>
-  
-          <h2 class="section-title section-team__title">Команда</h2>
-          <p class="section-team__desc">
-            Наша команда - это наша самая большая ценность. 
-            Мы трудились, чтобы собрать группу  экспертов,
-            чьи навыки дополняют друг друга. 
-            У членов нашей команды разные истории, но мы разделяем общую страсть к идеалу. Мы верим, чтобы оставаться
-            профессионалом, нужно развиваться, 
-            поэтому мы постоянно ищем способы, как стать лучше 
-            в том, что мы делаем.
-          </p>
   
           <button class="btn section-team__btn">СМОТРЕТЬ ВИДЕО</button>
         </div>
