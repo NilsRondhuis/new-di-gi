@@ -1,7 +1,14 @@
 .section-team {
+    @include for-size(desktopHd) {
+        padding: 50px 0 100px 0;
+    }
 }
 .section-team__container {
     text-align: center;
+
+    @include for-size(desktop) {
+        position: relative;
+    }
 }
 .section-team__box--flex {
     @include for-size(tablet) {
@@ -18,9 +25,13 @@
         max-height: 230px;
     }
     @include for-size(desktop) {
-        margin-right: auto;
         max-width: 395px;
         max-height: 380px;
+    }
+    @include for-size(desktopHd) {
+        margin-right: 215px;
+        max-width: 460px;
+        max-height: 420px;
     }
 }
 .section-team__box--text {
@@ -43,6 +54,9 @@
     @include for-size(tablet) {
         margin: 0 0 20px 0;
     }
+    @include for-size(desktopHd) {
+        margin: 0 0 40px 0;
+    }
 }
 .section-team__desc {
     margin-bottom: 85px;
@@ -51,7 +65,12 @@
         margin-bottom: 55px;
     }
     @include for-size(desktop) {
+        margin: 0;
+        width: 420px;
         @include fonts-property(18px, 1.33);
+    }
+    @include for-size(desktopHd) {
+        width: 100%;
     }
 }
 .section-team__btn {
@@ -65,6 +84,8 @@
     }
 
     @include for-size(desktop) {
-        
+        position: absolute;
+        bottom: 0%;
+        left: 48%;
     }
 }

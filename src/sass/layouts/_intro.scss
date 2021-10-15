@@ -10,11 +10,17 @@
     @include for-size(desktop) {
         padding: 40px 0;
     }
+    @include for-size(desktopHd) {
+        padding: 60px 0;
+    }
 }
 .section-intro__container {
     @include for-size(tablet) {
         display: flex;
         align-items: flex-start;
+    }
+    @include for-size(desktop) {
+        align-items: center;
     }
 }
 .section-intro__box {
@@ -32,6 +38,9 @@
     @include for-size(desktop) {
         @include fonts-property(18px, 1);
     }
+    @include for-size(desktopHd) {
+        @include fonts-property(24px, 1.33);
+    }
 }
 .section-intro__desc {
     margin-bottom: 40px;
@@ -44,6 +53,9 @@
         margin: 0;
     }
     @include for-size(desktop) {
-        @include fonts-property(16px, 1.14);
+        @include fonts-property(14px, 1.14);
+    }
+    @include for-size(desktopHd) {
+        @include fonts-property(16px, 1.12);
     }
 }

@@ -2,6 +2,13 @@
     padding: 85px 0 65px 0;
     position: relative;
     background-color: var(--accent-cl);
+
+    @include for-size(tablet) {
+        padding: 115px 0 55px 0;
+    }
+    @include for-size(desktop) {
+        padding: 160px 0 125px;
+    }
 }
 .container {
 }
@@ -32,6 +39,13 @@
     @include for-size(tablet) {
         @include fonts-property (36px, 0.89);
     }
+    @include for-size(desktop) {
+        margin-bottom: 80px;
+    }
+    @include for-size(desktopHd) {
+        max-width: 615px;
+        @include fonts-property (24px, 1.33);
+    }
 }
 .list-social {
     margin-bottom: 40px;
@@ -41,6 +55,12 @@
 
     @include for-size(portrait) {
         flex-direction: row;
+    }
+    @include for-size(tablet) {
+        margin-bottom: 70px;
+    }
+    @include for-size(desktop) {
+        margin-bottom: 60px;
     }
 }
 .list-social__item {
@@ -75,6 +95,12 @@
     }
     @include for-size(tablet) {
         padding: 25px 79px;
+    }
+    @include for-size(desktop) {
+        padding: 20px 111px;
+    }
+    @include for-size(desktopHd) {
+        padding: 25px 163px;
     }
 }
 .list-social__icon {
@@ -112,9 +138,32 @@
         }
         &:first-child {
             margin-right: 270px;
+
+            @include for-size(desktop) {
+                margin: 0 120px 0 0;
+            }
+            @include for-size(desktopHd) {
+                margin: 0 200px 0 0;
+            }
         }
         &:nth-child(3) {
             margin-right: 215px;
+
+            @include for-size(desktop) {
+                margin: 0 50px 0 0;
+            }
+            @include for-size(desktopHd) {
+                margin: 0 200px 0 0;
+            }
+        }
+    }
+    @include for-size(desktop) {
+        &:nth-child(2) {
+            margin: 0 120px 0 0;
+
+            @include for-size(desktopHd) {
+                margin: 0 200px 0 0;
+            }
         }
     }
 }

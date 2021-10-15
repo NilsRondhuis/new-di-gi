@@ -69,6 +69,22 @@
            background-image: url(../images/desktop/hero/bg-img@3x.jpg);
         }
     }
+    @include for-size(desktopHd) {
+        padding-top: 110px;
+        background-image: url(../images/desktop-hd/hero/bg-img.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/desktop-hd/hero/bg-img@2x.jpg);
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+           background-image: url(../images/desktop-hd/hero/bg-img@3x.jpg);
+        }
+    }
 }   
 .section-hero__title {
     margin: 0;
@@ -84,6 +100,10 @@
     }
     @include for-size(desktop) {
         @include fonts-property(84px, 1);
+    }
+    @include for-size(desktopHd) {
+        margin-bottom: 20px;
+        @include fonts-property(96px, 1);
     }
 }
 .section-hero__text {
@@ -103,6 +123,11 @@
         margin-left: auto;
         margin-bottom: 10px;
         max-width: 590px;
+    }
+    @include for-size(desktopHd) {
+        margin-bottom: 30px;
+        max-width: 800px;
+        @include fonts-property(24px, 1.08);
     }
 }
 .section-hero__btn {

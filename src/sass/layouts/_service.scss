@@ -4,6 +4,21 @@
     @include for-size(portrait) {
         padding-bottom: 0;
     }
+    @include for-size(desktopHd) {
+        padding: 0;
+    }
+}
+.section-service__container {
+    @include for-size(desktopHd) {
+        display: flex;
+        align-items: center;
+    }
+}
+.section-service__box {
+    @include for-size(desktopHd) {
+        margin-right: 60px;
+        width: 390px;
+    }
 }
 .section-service__title {
     display: flex;
@@ -30,13 +45,15 @@
         margin-bottom: 10px;
         @include fonts-property(48px, 1.16);
     }
-
     @include for-size(tablet) {
         margin-bottom: 40px;
     }
-
     @include for-size(desktop) {
         margin-bottom: 60px;
+    }
+    @include for-size(desktopHd) {
+        margin-bottom: 65px;
+        align-items: start;
     }
 }
 .section-service__desc--medium {
@@ -71,6 +88,10 @@
     @include for-size(desktop) {
         margin-bottom: 35px;
     }
+    @include for-size(desktopHd) {
+        display: inline-block;
+        text-align: start;
+    }
 }
 .section-service__desc--bottom {
     margin-bottom: 40px;
@@ -80,10 +101,14 @@
     }
     @include for-size(tablet) {
         margin-bottom: 30px;
+        text-align: start;
     }
     @include for-size(desktop) {
         width: 610px;
         text-align: start;
+    }
+    @include for-size(desktopHd) {
+        width: 355px;
     }
 }
 .list-service {

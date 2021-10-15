@@ -40,6 +40,10 @@
         margin: 15px;
         flex-basis: calc((100% - 2 * 30px) / 2);
     }
+    @include for-size(desktopHd) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    }
+
 }
 .list-project__link {
     position: relative;
@@ -52,8 +56,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         display: block;
-        width: 220px;
-        height: 200px;
+        width: 90%;
+        height: 90%;
         background-color: #f9f6e5d8;
         background-image: url(../images/svg/info-button.svg), url(../images/svg/search.svg);
         background-repeat: no-repeat;
@@ -62,9 +66,9 @@
         transition: opacity 250ms linear;
 
         @include for-size(portrait) {
-            width: 430px;
-            height: 380px;
-            background-position: 170px center, 230px center;
+            width: 90%;
+            height: 90%;
+            background-position: 145px center, 220px center;
             background-size: 50px;
         }
         @include for-size(tablet) {
@@ -76,6 +80,10 @@
         @include for-size(desktop) {
             background-position: 150px center, 215px center;
             background-size: 50px;
+        }
+        @include for-size(desktopHd) {
+            background-position: 100px center, 155px center;
+            background-size: 40px;
         }
     }
 
