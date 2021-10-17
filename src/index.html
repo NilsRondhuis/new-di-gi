@@ -16,7 +16,7 @@
     <header class="page-header">
       <div class="container">
         <nav class="page-header__nav">
-          <a href="" class="logo">
+          <a href="" class="logo logo--header">
             <picture>
               <source srcset="
               ./images/logo/logo.png 1x
@@ -28,8 +28,11 @@
           </a>
   
           <button class="btn-menu">
-            <svg class="btn-menu__icon">
+            <svg class="btn-menu__icon-burger">
               <use href="./images/svg/sprite.svg#burger"></use>
+            </svg>
+            <svg class="btn-menu__icon-cross btn-menu__icon--is-hidden">
+              <use href="./images/svg/sprite.svg#cross"></use>
             </svg>
           </button>
         </nav>
@@ -56,7 +59,7 @@
         </div>
       </section>
 
-      <section class="section section-service">
+      <section id="service" class="section section-service">
         <div class="container section-service__container">
           <div class="section-service__box">
             <h2 class="section-service__title">Сервис</h2>
@@ -205,7 +208,7 @@
         </div>
       </section>
 
-      <section class="section section-project">
+      <section id="project" class="section section-project">
         <div class="container">
           <h2 class="section-title section-project__title">Наши Проекты</h2>
         <ul class="list-project">
@@ -265,7 +268,7 @@
         </div>
       </section>
 
-      <section class="section section-team">
+      <section id="team" class="section section-team">
         <div class="container section-team__container">
           <div class="section-team__box--flex">
             <div class="section-team__box--img">
@@ -301,7 +304,7 @@
         </div>
       </section>
 
-      <section class="section section-news">
+      <section id="news" class="section section-news">
         <div class="container">
           <h2 class="section-title section-news__title">Последние Новости</h2>
 
@@ -439,7 +442,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer id="contacts" class="page-footer">
       <div class="container">
         <div class="page-footer__box">
           <a href="" class="logo">
@@ -542,6 +545,49 @@
           </svg>
         </button>
       </div>
+    </div>
+
+    <div class="backdrop"></div>
+    <div class="modal">
+      <ul class="list-modal">
+        <li class="list-modal__item"><a href="#service" class="list-modal__link">Сервис</a></li>
+        <li class="list-modal__item"><a href="#project" class="list-modal__link">Наши проекты</a></li>
+        <li class="list-modal__item"><a href="#team" class="list-modal__link">Команда</a></li>
+        <li class="list-modal__item"><a href="#news" class="list-modal__link">Новости</a></li>
+        <li class="list-modal__item"><a href="#contacts" class="list-modal__link">Контакты</a></li>
+      </ul>
+
+      <ul class="list-social--menu">
+        <li class="list-social__item--menu">
+          <a href="" target="_blank" rel="noopener noreferer" class="list-social__link--menu">
+            <svg class="list-social__icon">
+              <use href="./images/svg/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-social__item--menu">
+          <a href="" target="_blank" rel="noopener noreferer" class="list-social__link--menu">
+            <svg class="list-social__icon">
+              <use href="./images/svg/sprite.svg#google"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-social__item--menu">
+          <a href="" target="_blank" rel="noopener noreferer" class="list-social__link--menu">
+            <svg class="list-social__icon">
+              <use href="./images/svg/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="list-social__item--menu">
+          <a href="" target="_blank" rel="noopener noreferer" class="list-social__link--menu">
+            <svg class="list-social__icon">
+              <use href="./images/svg/sprite.svg#pinterest"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div><p class="copy-menu">DiGi&copy;2021</p></div>
     </div>
     <script src="./index.js"></script>
   </body>

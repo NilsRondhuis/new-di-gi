@@ -1,0 +1,69 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.192);
+    opacity: 0;
+    transition: opacity 500ms linear;
+    pointer-events: none;
+}
+.modal {
+    position: absolute;
+    top: 0;
+    padding: 130px 20px 0 20px;
+    width: 50%;
+    height: 100vh;
+    background-color: #1f1f1f;
+    transform: translateX(-110%);
+    transition: transform 250ms linear;
+    box-shadow: 3px 2px 8px -1px rgba(34, 60, 80, 0.2);
+
+    @include for-size(portrait) {
+        width: 40%;
+    }
+    @include for-size(desktop) {
+        padding-left: 40px;
+        width: 30%;
+    }
+}
+.list-modal {
+    margin-bottom: 50px;
+
+    @include for-size(desktop) {
+        margin-bottom: 100px;
+    }
+}
+.list-modal__item:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include for-size(desktop) {
+        margin-bottom: 20px;
+    }
+}
+.list-modal__link {
+    font-size: 21px;
+    color: var(--white-cl);
+
+    @include for-size(desktop) {
+        font-size: 24px;
+    }
+}
+.backdrop--is-show {
+    opacity: 1;
+    pointer-events: all;
+}
+.modal-is-show {
+    transform: translateX(0);
+}
+.copy-menu {
+    margin: 100% 0 0 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--white-cl);
+
+    @include for-size(tablet) {
+        margin: 80% 0 0 0;
+    }
+}

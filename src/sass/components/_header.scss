@@ -11,8 +11,12 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.logo--header {
+    position: relative;
+    z-index: 2;
+}
 .btn-menu {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +26,13 @@
     border: none;
     background-color: var(--white-cl);
     cursor: pointer;
+    z-index: 2;
 }
-.btn-menu__icon {
+.btn-menu__icon-burger,
+.btn-menu__icon-cross {
     width: 13px;
     height: 14px;
+}
+.btn-menu__icon--is-hidden {
+    display: none;
 }

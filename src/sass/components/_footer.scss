@@ -47,68 +47,6 @@
         @include fonts-property (24px, 1.33);
     }
 }
-.list-social {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include for-size(portrait) {
-        flex-direction: row;
-    }
-    @include for-size(tablet) {
-        margin-bottom: 70px;
-    }
-    @include for-size(desktop) {
-        margin-bottom: 60px;
-    }
-}
-.list-social__item {
-
-    &:not(:last-child) {
-        margin-bottom: 10px;
-
-        @include for-size(portrait) {
-            margin: 0;
-        }
-    }
-
-    @include for-size(portrait) {
-        border: 1px solid var(--secondary-cl);
-
-        &:first-child {
-            border-left: none;
-        }
-        &:last-child {
-            border-right: none;
-        }
-    }
-    @include for-size(tablet) {
-        border: 1px solid #7EBF84;
-    }
-}
-.list-social__link {
-    display: inline-block;
-
-    @include for-size(portrait) {
-        padding: 20px 63px;
-    }
-    @include for-size(tablet) {
-        padding: 25px 79px;
-    }
-    @include for-size(desktop) {
-        padding: 20px 111px;
-    }
-    @include for-size(desktopHd) {
-        padding: 25px 163px;
-    }
-}
-.list-social__icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--white-cl);
-}
-
 .list-meta {
     display: flex;
     flex-direction: column;
