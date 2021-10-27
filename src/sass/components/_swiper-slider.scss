@@ -1,0 +1,24 @@
+.slider-hero {
+    margin-bottom: 50px;
+
+    @include for-size(desktop) {
+        margin-bottom: 110px;
+    }
+    @include for-size(desktopHd) {
+        margin-bottom: 120px;
+    }
+}
+.swiper-pagination {
+    position: static;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid #476E4D;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-cl);
+    border-color: var(--accent-cl);
+}
