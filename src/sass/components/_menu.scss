@@ -19,6 +19,7 @@
     transform: translateX(-110%);
     transition: transform 250ms linear;
     box-shadow: 3px 2px 8px -1px rgba(34, 60, 80, 0.2);
+    z-index: 2;
 
     @include for-size(portrait) {
         width: 40%;
