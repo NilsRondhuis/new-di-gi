@@ -7,10 +7,6 @@
 .list-news {
 
     @include for-size(portrait) {
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: center;
-        // margin: -15px;
         display: flex;
         flex-flow: column wrap;
         max-height: 1765px;
@@ -27,7 +23,7 @@
 .list-news__item {
     margin-left: auto;
     margin-right: auto;
-    max-width: 280px;
+    max-width: 270px;
     width: 100%;
     height: max-content;
 
@@ -80,8 +76,13 @@
     &:hover::before,
     &:focus::before {
         opacity: 1;
-        // background-color: rgba(107, 176, 113, 0.3);
     }
+}
+.list-news__link--small::before {
+    background-position: center 80px;
+}
+.list-news__link--mini::before {
+    background-position: center 60px;
 }
 .list-news__pic {
     display: block;
@@ -101,10 +102,11 @@
 }
 
 .list-news__subhead--design {
-    width: 280px;
+    width: 270px;
     padding: 10px 20px 10px 20px;
-    background-color: var(--white-cl);
+    @include fonts-property(17px, 1.16);
     color: var(--dark-cl);
+    background-color: var(--white-cl);
     transition: transform 250ms linear,
     color 250ms linear,
     background-color 250ms linear;

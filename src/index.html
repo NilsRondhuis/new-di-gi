@@ -17,14 +17,15 @@
       <div class="container">
         <nav class="page-header__nav">
           <a href="" class="logo logo--header">
-            <picture>
-              <source srcset="
-              ./images/logo/logo.png 1x
-              ./images/logo/logo@2x.png 2x
-              ./images/logo/logo@3x.png 3x
-              ">
-              <img src="./images/logo/logo.png" alt="Логотип" width="100">
-            </picture>
+            <img
+            srcset="
+            ./images/logo/logo.png 1x,
+            ./images/logo/logo@2x.png 2x,
+            ./images/logo/logo@3x.png 3x
+            "
+            sizes="100px" 
+            src="./images/logo/logo.png" 
+            alt="Логотип">
           </a>
   
           <button class="btn-menu">
@@ -231,54 +232,206 @@
         <ul class="list-project">
           <li class="list-project__item">
             <a href="" class="list-project__link">
-              <img 
-              srcset="
-              ./images/mobile/project/lalique.png 300w,
-              ./images/portrait/project/lalique.png 600w
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/project/lalique.png" 
-              alt="Lalique">
+              <picture>
+                <source
+                srcset="
+                ./images/mobile/project/lalique.png 1x,
+                ./images/mobile/project/lalique@2x.png 2x"
+                media="(max-width: 639px)"
+                sizes="(max-width: 639px) 280px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/portrait/project/lalique.png 1x,
+                ./images/portrait/project/lalique@2x.png 2x"
+                media="(min-width: 640px)"
+                sizes="(min-width: 640px) 518px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/tablet/project/lalique.png 1x,
+                ./images/tablet/project/lalique@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 318px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/desktop/project/lalique.png 1x,
+                ./images/desktop/project/lalique@2x.png 2x
+                "
+                media="(min-width: 1024px)"
+                sizes="(min-width: 1024px) 318px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/desktop-hd/project/lalique.png 1x,
+                ./images/desktop-hd/project/lalique@2x.png 2x
+                "
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 268px, 100vw"
+                type="image/png"
+                >
+                <img src="./images/mobile/project/lalique.png" alt="Lalique бутик">
+              </picture>
             </a>
             <p class="list-project__name">Lalique бутик</p>
           </li>
           <li class="list-project__item">
             <a href="" class="list-project__link">
-              <img 
-              srcset="
-              ./images/mobile/project/house.png 300w,
-              ./images/portrait/project/house.png 600w
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/project/house.png" 
-              alt="House">
+              <picture>
+                <source
+                srcset="
+                ./images/mobile/project/house.png 1x,
+                ./images/mobile/project/house@2x.png 2x"
+                media="(max-width: 639px)"
+                sizes="(max-width: 639px) 280px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/portrait/project/house.png 1x,
+                ./images/portrait/project/house@2x.png 2x"
+                media="(min-width: 640px)"
+                sizes="(min-width: 640px) 518px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/tablet/project/house.png 1x,
+                ./images/tablet/project/house@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 318px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/desktop/project/house.png 1x,
+                ./images/desktop/project/house@2x.png 2x
+                "
+                media="(min-width: 1024px)"
+                sizes="(min-width: 1024px) 318px, 100vw"
+                type="image/png"
+                >
+                <source
+                srcset="
+                ./images/desktop-hd/project/house.png 1x,
+                ./images/desktop-hd/project/house@2x.png 2x
+                "
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 268px, 100vw"
+                type="image/png"
+                >
+                <img src="./images/mobile/project/house.png" alt="House">
+              </picture>
             </a>
             <p class="list-project__name">Строительство домов</p>
           </li>
           <li class="list-project__item">
             <a href="" class="list-project__link">
-              <img 
+            <picture>
+              <source
               srcset="
-              ./images/mobile/project/coffe.png 300w,
-              ./images/portrait/project/coffe.png 600w
+              ./images/mobile/project/coffe.png 1x,
+              ./images/mobile/project/coffe@2x.png 2x"
+              media="(max-width: 639px)"
+              sizes="(max-width: 639px) 280px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/portrait/project/coffe.png 1x,
+              ./images/portrait/project/coffe@2x.png 2x"
+              media="(min-width: 640px)"
+              sizes="(min-width: 640px) 518px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/tablet/project/coffe.png 1x,
+              ./images/tablet/project/coffe@2x.png 2x
               "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/project/coffe.png" 
-              alt="Сoffe">
-            </a>
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 318px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/desktop/project/coffe.png 1x,
+              ./images/desktop/project/coffe@2x.png 2x
+              "
+              media="(min-width: 1024px)"
+              sizes="(min-width: 1024px) 318px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/desktop-hd/project/coffe.png 1x,
+              ./images/desktop-hd/project/coffe@2x.png 2x
+              "
+              media="(min-width: 1440px)"
+              sizes="(min-width: 1440px) 268px, 100vw"
+              type="image/png"
+              >
+              <img src="./images/mobile/project/coffe.png" alt="Coffe">
+            </picture>
+          </a>
             <p class="list-project__name">Кофейня</p>
           </li>
           <li class="list-project__item">
             <a href="" class="list-project__link">
-              <img 
+            <picture>
+              <source
               srcset="
-              ./images/mobile/project/tour.png 300w,
-              ./images/portrait/project/tour.png 600w
+              ./images/mobile/project/tour.png 1x,
+              ./images/mobile/project/tour@2x.png 2x"
+              media="(max-width: 639px)"
+              sizes="(max-width: 639px) 280px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/portrait/project/tour.png 1x,
+              ./images/portrait/project/tour@2x.png 2x"
+              media="(min-width: 640px)"
+              sizes="(min-width: 640px) 518px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/tablet/project/tour.png 1x,
+              ./images/tablet/project/tour@2x.png 2x
               "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/project/tour.png" 
-              alt="Tour">
-            </a>
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 318px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/desktop/project/tour.png 1x,
+              ./images/desktop/project/tour@2x.png 2x
+              "
+              media="(min-width: 1024px)"
+              sizes="(min-width: 1024px) 318px, 100vw"
+              type="image/png"
+              >
+              <source
+              srcset="
+              ./images/desktop-hd/project/tour.png 1x,
+              ./images/desktop-hd/project/tour@2x.png 2x
+              "
+              media="(min-width: 1440px)"
+              sizes="(min-width: 1440px) 268px, 100vw"
+              type="image/png"
+              >
+              <img src="./images/mobile/project/tour.png" alt="Tour">
+            </picture>
+          </a>
             <p class="list-project__name">Уникальные туры</p>
           </li>
         </ul>
@@ -289,18 +442,54 @@
         <div class="container section-team__container">
           <div class="section-team__box--flex">
             <div class="section-team__box--img">
-              <img 
+              <picture>
+                <source
                 srcset="
-                ./images/mobile/team/video@3x.jpg 300w,
-                ./images/portrait/team/video@3x.jpg 600w,
-                ./images/tablet/team/video@3x.jpg 700w,
-                ./images/desktop/team/video@3x.jpg 1000w
-                ./images/desktop-hd/team/video@3x.jpg 1400w
+                ./images/mobile/team/video.jpg 1x,
+                ./images/mobile/team/video@2x.jpg 2x
                 "
-                sizes="(min-width: 1440px) 1380px, (min-width: 1024px) 1185px, (min-width: 768px) 1554px, (min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-                src="./images/mobile/team/video@3x.jpg"
-                alt="team"
-              />
+                media="(max-width: 639px)"
+                sizes="(max-width: 639px) 280px, 100vw"
+                type="image/jpg"
+                >
+                <source
+                srcset="
+                ./images/portrait/team/video.jpg 1x,
+                ./images/portrait/team/video@2x.jpg 2x
+                "
+                media="(min-width: 640px)"
+                sizes="(min-width: 640px) 518px, 100vw"
+                type="image/jpg"
+                >
+                <source
+                srcset="
+                ./images/tablet/team/video.jpg 1x,
+                ./images/tablet/team/video@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 240px, 100vw"
+                type="image/jpg"
+                >
+                <source
+                srcset="
+                ./images/desktop/team/video.jpg 1x,
+                ./images/desktop/team/video@2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+                sizes="(min-width: 1024px) 395px, 100vw"
+                type="image/jpg"
+                >
+                <source
+                srcset="
+                ./images/desktop-hd/team/video.jpg 1x,
+                ./images/desktop-hd/team/video@2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 460px, 100vw"
+                type="image/jpg"
+                >
+                <img src="./images/mobile/team/video.jpg" alt="Team">
+              </picture>
             </div>   
     
             <div class="section-team__box--text">
@@ -325,17 +514,15 @@
         <div class="container">
           <h2 class="section-title section-news__title">Последние Новости</h2>
 
-          <!-- Переделать на гриды -->
         <ul class="list-news">
           <li class="list-news__item">
             <a href="" class="list-news__link">
-              <img
+              <img 
               srcset="
-              ./images/mobile/news/news-1@2x.jpg 300w
-              ./images/mobile/news/news-1@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-1@2x.jpg"
+              ./images/news/news-1.jpg 1x,
+              ./images/news/news-1@2x.jpg 2x"
+              src="./images/news/news-1.jpg"
+              sizes="270px"
               alt="1">
 
               <p class="list-news__subhead list-news__subhead--design">3Д в брендинге</p>
@@ -343,13 +530,12 @@
           </li>
           <li class="list-news__item">
             <a href="" class="list-news__link">
-              <img
+              <img 
               srcset="
-              ./images/mobile/news/news-2@2x.jpg 300w
-              ./images/mobile/news/news-2@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-2@2x.jpg"
+              ./images/news/news-2.jpg 1x,
+              ./images/news/news-2@2x.jpg 2x"
+              src="./images/news/news-2.jpg"
+              sizes="270px"
               alt="2">
 
               <p class="list-news__subhead list-news__subhead--design">Контекстная реклама</p>
@@ -357,41 +543,38 @@
           </li>
           <li class="list-news__item">
             <a href="" class="list-news__link">
-              <img
+              <img 
               srcset="
-              ./images/mobile/news/news-3@2x.jpg 300w
-              ./images/mobile/news/news-3@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-3@2x.jpg"
+              ./images/news/news-3.jpg 1x,
+              ./images/news/news-3@2x.jpg 2x"
+              src="./images/news/news-3.jpg"
+              sizes="270px"
               alt="3">
 
               <p class="list-news__subhead list-news__subhead--design">Графика</p>
             </a>
           </li>
           <li class="list-news__item">
-            <a href="" class="list-news__link">
-              <img
+            <a href="" class="list-news__link list-news__link--small">
+              <img 
               srcset="
-              ./images/mobile/news/news-4@2x.jpg 300w
-              ./images/mobile/news/news-4@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-4@2x.jpg"
+              ./images/news/news-4.jpg 1x,
+              ./images/news/news-4@2x.jpg 2x"
+              src="./images/news/news-4.jpg"
+              sizes="270px"
               alt="4">
 
               <p class="list-news__subhead list-news__subhead--design">Корпоративная культура</p>
             </a>
           </li>
           <li class="list-news__item">
-            <a href="" class="list-news__link">
-              <img
+            <a href="" class="list-news__link list-news__link--mini">
+              <img 
               srcset="
-              ./images/mobile/news/news-5@2x.jpg 300w
-              ./images/mobile/news/news-5@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-5@2x.jpg"
+              ./images/news/news-5.jpg 1x,
+              ./images/news/news-5@2x.jpg 2x"
+              src="./images/news/news-5.jpg"
+              sizes="270px"
               alt="5">
 
               <p class="list-news__subhead list-news__subhead--design">Уникальный дизайн</p>
@@ -399,27 +582,25 @@
           </li>
           <li class="list-news__item">
             <a href="" class="list-news__link">
-              <img
+              <img 
               srcset="
-              ./images/mobile/news/news-6@2x.jpg 300w
-              ./images/mobile/news/news-6@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-6@2x.jpg"
+              ./images/news/news-6.jpg 1x,
+              ./images/news/news-6@2x.jpg 2x"
+              src="./images/news/news-6.jpg"
+              sizes="270px"
               alt="6">
 
               <p class="list-news__subhead list-news__subhead--design">Взгляд со стороны</p>
             </a>
           </li>
           <li class="list-news__item">
-            <a href="" class="list-news__link">
-              <img
+            <a href="" class="list-news__link list-news__link--mini">
+              <img 
               srcset="
-              ./images/mobile/news/news-7@2x.jpg 300w
-              ./images/mobile/news/news-7@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-7@2x.jpg"
+              ./images/news/news-7.jpg 1x,
+              ./images/news/news-7@2x.jpg 2x"
+              src="./images/news/news-7.jpg"
+              sizes="270px"
               alt="7">
 
               <p class="list-news__subhead list-news__subhead--design">Соц сети и их польза</p>
@@ -427,13 +608,12 @@
           </li>
           <li class="list-news__item">
             <a href="" class="list-news__link">
-              <img
+              <img 
               srcset="
-              ./images/mobile/news/news-8@2x.jpg 300w
-              ./images/mobile/news/news-8@3x.jpg 600w 
-              "
-              sizes="(min-width: 640px) 518px, (max-width: 639px) 280px, 100vw"
-              src="./images/mobile/news/news-8@2x.jpg"
+              ./images/news/news-8.jpg 1x,
+              ./images/news/news-8@2x.jpg 2x"
+              src="./images/news/news-8.jpg"
+              sizes="270px"
               alt="8">
 
               <p class="list-news__subhead list-news__subhead--design">Эксклюзивность</p>
@@ -463,14 +643,15 @@
       <div class="container">
         <div class="page-footer__box">
           <a href="" class="logo">
-            <picture>
-              <source srcset="
-              ./images/logo/logo.png 1x
-              ./images/logo/logo@2x.png 2x
-              ./images/logo/logo@3x.png 3x
-              ">
-              <img src="./images/logo/logo.png" alt="Логотип" width="100">
-            </picture>
+            <img
+            srcset="
+            ./images/logo/logo.png 1x,
+            ./images/logo/logo@2x.png 2x,
+            ./images/logo/logo@3x.png 3x
+            "
+            sizes="100px" 
+            src="./images/logo/logo.png" 
+            alt="Логотип">
           </a>
         </div>
 
