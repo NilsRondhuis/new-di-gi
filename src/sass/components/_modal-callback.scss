@@ -1,0 +1,45 @@
+.modal-callback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px 20px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform 250ms linear;
+    background-color: var(--secondary-cl);
+    border-radius: 4px;
+}
+.modal-callback__scale {
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal-callback__btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.modal-callback__btn-icon {
+    width: 15px;
+    height: 15px;
+}
+.modal-callback__text {
+    margin: 0 0 20px 0;
+    color: black;
+}
+.modal-callback__form-title {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    color: black;
+}
+.modal-callback__input {
+    padding: 5px;
+    border: 2px solid #476E4D;
+    outline-color: var(--accent-cl);
+    border-radius: 4px;
+}

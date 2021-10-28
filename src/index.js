@@ -4,4 +4,5 @@ import './js/common/common';
 import './js/refs/refs';
 import './js/menu';
 import './js/swiper-hero';
+import './js/callback-modal';
 
