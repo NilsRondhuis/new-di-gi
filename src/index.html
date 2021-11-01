@@ -83,11 +83,17 @@
                 <use href="./images/svg/sprite.svg#cross"></use>
               </svg>
             </button>
-            <p class="modal-callback__text">Хотите мы перезвоним вам через <span>30</span> секунд?</p>
+            <p class="modal-callback__text">Хотите мы перезвоним Вам через <span class="timer-num"></span> секунд?</p>
             <b class="modal-callback__form-title">Введите номер телефона</b>
-            <form action="#">
+            <form action="#" class="modal-callback__form">
               <input class="modal-callback__input" type="tel" name="user_number" id="user_number">
+              <button class="btn btn--modal-callback">ПЕРЕЗВОНИТЕ МНЕ</button>
             </form>
+            <div class="modal-callback__icon-box">
+              <svg class="modal-callback__icon-phone">
+                <use href="./images/svg/sprite.svg#phone"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>

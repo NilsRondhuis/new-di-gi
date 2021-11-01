@@ -27,3 +27,21 @@ function navPage(e) {
     refs.modal.classList.remove('modal-is-show');
     refs.body.classList.remove('hidden-scroll');
 }
+
+window.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('backdrop--is-show')) {
+        return;
+    }
+    handleMenu();
+});
+
+window.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape') {
+        refs.iconBurger.classList.remove('btn-menu__icon--is-hidden');
+        refs.iconCross.classList.add('btn-menu__icon--is-hidden');
+        refs.backdrop.classList.remove('backdrop--is-show');
+        refs.modal.classList.remove('modal-is-show');
+        refs.body.classList.remove('hidden-scroll');
+    }
+    return;
+});

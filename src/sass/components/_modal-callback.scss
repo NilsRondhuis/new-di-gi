@@ -2,12 +2,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px 20px;
+    padding: 40px 20px 20px 20px;
     text-align: center;
     transform: translate(-50%, -50%) scale(0.8);
     transition: transform 250ms linear;
-    background-color: var(--secondary-cl);
+    background-color: var(--white-cl);
     border-radius: 4px;
+
+    @include for-size(tablet) {
+        min-width: 380px;
+    }
 }
 .modal-callback__scale {
     transform: translate(-50%, -50%) scale(1);
@@ -31,15 +35,69 @@
 .modal-callback__text {
     margin: 0 0 20px 0;
     color: black;
+
+    .timer-num {
+        font-weight: 500;
+    }
 }
 .modal-callback__form-title {
     display: inline-block;
     margin: 0 0 20px 0;
-    color: black;
+    color: var(--accent-cl);;
+}
+.modal-callback__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .modal-callback__input {
     padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
     border: 2px solid #476E4D;
     outline-color: var(--accent-cl);
     border-radius: 4px;
+
+    @include for-size(tablet) {
+        width: 75%;
+    }
+}
+._req {
+    border: 2px solid red;
+    outline-color: red;
+}
+.modal-callback__icon-box {
+    padding-top: 20px;
+}
+.modal-callback__icon-phone {
+    width: 35px;
+    height: 35px;
+    fill: var(--accent-cl);
+    animation-name: rotatePhone;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.btn--modal-callback {
+    width: 100%;
+    color: var(--accent-cl);
+    background-color: var(--secondary-cl);
+
+    @include for-size(tablet) {
+        width: 65%;
+    }
+}
+.btn--modal-callback:hover,
+.btn--modal-callback:focus {
+    background-color: transparent;
+}
+
+@keyframes rotatePhone {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
 }

@@ -10,4 +10,7 @@ export default {
     btnCloseCallback: document.querySelector('.modal-callback__btn-close'),
     backdropCallback: document.querySelector('.backdrop-callback'),
     modalCallback: document.querySelector('.modal-callback'),
+    timerNum: document.querySelector('.timer-num'),
+    modalCallbackForm: document.querySelector('.modal-callback__form'),
+    modalCallbackInput: document.querySelector('.modal-callback__input'),
 }
