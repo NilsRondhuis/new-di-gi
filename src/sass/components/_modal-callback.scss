@@ -3,14 +3,15 @@
     top: 50%;
     left: 50%;
     padding: 40px 20px 20px 20px;
+    width: 80%;
     text-align: center;
     transform: translate(-50%, -50%) scale(0.8);
     transition: transform 250ms linear;
     background-color: var(--white-cl);
     border-radius: 4px;
 
-    @include for-size(tablet) {
-        min-width: 380px;
+    @include for-size(portrait) {
+        max-width: 380px;
     }
 }
 .modal-callback__scale {
@@ -58,7 +59,7 @@
     outline-color: var(--accent-cl);
     border-radius: 4px;
 
-    @include for-size(tablet) {
+    @include for-size(portrait) {
         width: 75%;
     }
 }
@@ -84,7 +85,7 @@
     color: var(--accent-cl);
     background-color: var(--secondary-cl);
 
-    @include for-size(tablet) {
+    @include for-size(portrait) {
         width: 65%;
     }
 }

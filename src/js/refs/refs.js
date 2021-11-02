@@ -13,4 +13,5 @@ export default {
     timerNum: document.querySelector('.timer-num'),
     modalCallbackForm: document.querySelector('.modal-callback__form'),
     modalCallbackInput: document.querySelector('.modal-callback__input'),
+    listService: document.querySelector('.list-service'),
 }
