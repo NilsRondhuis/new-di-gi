@@ -5,7 +5,6 @@
     color: var(--accent-cl);
 }
 .list-news {
-
     @include for-size(portrait) {
         display: flex;
         flex-flow: column wrap;
@@ -14,10 +13,10 @@
     }
 
     @include for-size(desktop) {
-        max-height: 1445px;
+        max-height: 1230px;
     }
     @include for-size(desktopHd) {
-        max-height: 1230px;
+        max-height: 915px;
     }
 }
 .list-news__item {
@@ -43,54 +42,37 @@
         &:nth-child(1) {
             order: 1;
         }
-    }
-    @include for-size(desktopHd) {
         &:nth-child(4) {
-            order: -1;
-        }
-        &:nth-child(2n + 1) {
-            order: -1;
+            order: 1;
         }
     }
-    
 }
 .list-news__link {
     position: relative;
     display: inline-block;
-
-    &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        background-image: url(../images/svg/info-btn-white.svg);
-        background-repeat: no-repeat;
-        background-size: 40px 45px;
-        background-position: center center;
-        opacity: 0;
-        transition: opacity 250ms linear;
-    }
-
-    &:hover::before,
-    &:focus::before {
-        opacity: 1;
-    }
 }
-.list-news__link--small::before {
-    background-position: center 80px;
+.list-news__before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b40744d;
+    opacity: 0;
+    transition: opacity 250ms linear;
 }
-.list-news__link--mini::before {
-    background-position: center 60px;
+.list-news__before--small {
+    height: 80%;
 }
-.list-news__pic {
-    display: block;
-    transition: outline 250ms linear;
-}
-.list-news__link:hover .list-news__pic,
-.list-news__link:focus .list-news__pic {
-    outline: 10px solid var(--accent-cl);
+.list-news__icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--white-cl);
 }
 .list-news__subhead {
     margin: 0;
@@ -100,7 +82,6 @@
     letter-spacing: 2px;
     color: currentColor;
 }
-
 .list-news__subhead--design {
     width: 270px;
     padding: 10px 20px 10px 20px;
@@ -111,10 +92,13 @@
     color 250ms linear,
     background-color 250ms linear;
 }
-
 .list-news__link:hover .list-news__subhead--design,
 .list-news__link:focus .list-news__subhead--design {
     transform: translateY(-100%);
     background-color: var(--accent-cl);
     color: var(--secondary-cl);
+}
+.list-news__link:hover .list-news__before,
+.list-news__link:focus .list-news__before {
+    opacity: 1;
 }

@@ -6,4 +6,4 @@ import './js/menu';
 import './js/swiper-hero';
 import './js/callback-modal';
 import './js/list-service-link';
-
+import './js/list-link';

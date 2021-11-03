@@ -14,4 +14,6 @@ export default {
     modalCallbackForm: document.querySelector('.modal-callback__form'),
     modalCallbackInput: document.querySelector('.modal-callback__input'),
     listService: document.querySelector('.list-service'),
+    listProject: document.querySelector('.list-project'),
+    listNews: document.querySelector('.list-news'),
 }

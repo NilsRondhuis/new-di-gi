@@ -49,47 +49,81 @@
     position: relative;
     display: block;
 
-    &::before {
-        position: absolute;
-        content: '';
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-        width: 90%;
-        height: 90%;
-        background-color: #f9f6e5d8;
-        background-image: url(../images/svg/info-button.svg), url(../images/svg/search.svg);
-        background-repeat: no-repeat;
-        background-position: 75px center, 115px center;
-        opacity: 0;
-        transition: opacity 250ms linear;
+    // &::before {
+    //     position: absolute;
+    //     content: '';
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     display: block;
+    //     width: 90%;
+    //     height: 90%;
+    //     background-color: #f9f6e5d8;
+    //     background-image: url(../images/svg/info-button.svg), url(../images/svg/search.svg);
+    //     background-repeat: no-repeat;
+    //     background-position: 75px center, 115px center;
+    //     opacity: 0;
+    //     transition: opacity 250ms linear;
 
-        @include for-size(portrait) {
-            width: 90%;
-            height: 90%;
-            background-position: 145px center, 220px center;
-            background-size: 50px;
-        }
-        @include for-size(tablet) {
-            width: 90%;
-            height: 90%;
-            background-position: 110px center, 165px center;
-            background-size: 40px;
-        }
-        @include for-size(desktop) {
-            background-position: 150px center, 215px center;
-            background-size: 50px;
-        }
-        @include for-size(desktopHd) {
-            background-position: 100px center, 155px center;
-            background-size: 40px;
-        }
-    }
+    //     @include for-size(portrait) {
+    //         width: 90%;
+    //         height: 90%;
+    //         background-position: 145px center, 220px center;
+    //         background-size: 50px;
+    //     }
+    //     @include for-size(tablet) {
+    //         width: 90%;
+    //         height: 90%;
+    //         background-position: 110px center, 165px center;
+    //         background-size: 40px;
+    //     }
+    //     @include for-size(desktop) {
+    //         background-position: 150px center, 215px center;
+    //         background-size: 50px;
+    //     }
+    //     @include for-size(desktopHd) {
+    //         background-position: 100px center, 155px center;
+    //         background-size: 40px;
+    //     }
+    // }
 
-    &:hover::before {
-        opacity: 1;
+    // &:hover::before {
+    //     opacity: 1;
+    // }
+}
+picture {
+    display: inline-block;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.list-project__before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: #f9f6e5d8;
+    opacity: 0;
+    transition: opacity 250ms linear;
+    border-radius: 3px;
+}
+.list-project__icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--accent-cl);
+
+    @media screen and (min-width: 640px) and (max-width: 1023px) {
+        width: 50px;
+        height: 50px;
     }
+}
+.list-project__link:hover .list-project__before,
+.list-project__link:focus .list-project__before {
+    opacity: 1;
 }
 .list-project__name {
     margin-top: 20px;
