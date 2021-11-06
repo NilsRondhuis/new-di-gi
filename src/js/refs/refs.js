@@ -16,4 +16,6 @@ export default {
     listService: document.querySelector('.list-service'),
     listProject: document.querySelector('.list-project'),
     listNews: document.querySelector('.list-news'),
+    target: document.querySelector('.target'),
+    btnUp: document.querySelector('.up-container__btn'),
 }

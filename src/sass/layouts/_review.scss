@@ -17,6 +17,12 @@
         margin-bottom: 40px;
     }
 }
+.review__swiper {
+    overflow: hidden;
+}
+.review__wrapper {
+    margin-bottom: 40px;
+}
 .review {
     color: var(--dark-cl);
 }
@@ -32,6 +38,10 @@
     }
     @include for-size(desktopHd) {
         @include fonts-property (34px, 1.16);
+    }
+    .review__text--em {
+        font-weight: 700;
+        color: var(--accent-cl);
     }
 }
 .review__name {
